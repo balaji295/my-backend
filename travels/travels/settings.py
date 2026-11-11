@@ -72,15 +72,17 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
+    'https://travels-u2lv9ie6w-my-project-0ca2.vercel.app/'
 ]
 CORS_ALLOW_CREDENTIALS = True
 CSRF_COOKIE_HTTPONLY = False
-CORS_ALLOW_ALL_ORIGINS=True
+#CORS_ALLOW_ALL_ORIGINS=True
 
 
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
+    'https://travels-u2lv9ie6w-my-project-0ca2.vercel.app/'
 ]
 CSRF_COOKIE_SAMESITE = 'None'
 CSRF_COOKIE_SECURE = 'False'
