@@ -110,15 +110,13 @@ WSGI_APPLICATION = 'travels.wsgi.application'
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        dj_database_url.config(
-
-            default='sqlite:///'+os.path.join(BASE_DIR, 'db.sqlite3g'),
+    'default':  dj_database_url.config(
+          default='sqlite:///'+os.path.join(BASE_DIR, 'db.sqlite3g'),
             conn_max_age=600
         )
         
     }
-}
+
 # Password validation
 # https://docs.djangoproject.com/en/6.1/ref/settings/#auth-password-validators
 
